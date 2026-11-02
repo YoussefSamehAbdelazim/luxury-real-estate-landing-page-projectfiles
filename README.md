@@ -77,8 +77,6 @@ The landing page includes essential SEO and social-sharing metadata:
 - Web App Manifest configuration.
 - Preconnect hints for external font resources.
 
-> **Note:** A canonical URL and `og:url` should be added after the landing page is deployed to its final domain.
-
 ---
 
 ## 📱 Responsive Design
