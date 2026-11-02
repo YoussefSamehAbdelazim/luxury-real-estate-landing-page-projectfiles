@@ -1,0 +1,181 @@
+/* قواعد التجاوب: تعديلات التخطيط والعناصر للشاشات الصغيرة والمتوسطة والكبيرة. */
+/* ==========================================================================
+   ملف التجاوب مع الشاشات (Responsive) - شركة "نخبة العقارية"
+   ========================================================================== */
+
+/* ============ الشاشات الكبيرة جدًا (1400px فأكثر) ============ */
+@media (min-width: 1400px) {
+  :root { --container-width: 1340px; }
+}
+
+/* ============ أجهزة اللابتوب الصغيرة والتابلت الأفقي (max-width: 1199px) ============ */
+@media (max-width: 1199px) {
+  .hero__title { font-size: 3rem; }
+  .properties__grid { grid-template-columns: repeat(2, 1fr); }
+  .services__grid { grid-template-columns: repeat(2, 1fr); }
+  .nav__list { gap: 1.3rem; }
+}
+
+/* ============ أجهزة التابلت (max-width: 991px) ============ */
+@media (max-width: 991px) {
+  :root { --fs-hero: 2.6rem; --fs-xxl: 2.1rem; --space-xxl: 4rem; }
+
+  .header__cta { display: none; }
+  .burger { display: flex; }
+
+  .nav {
+    position: fixed; top: 0; right: -100%; width: min(330px, 85%); height: 100vh;
+    background: var(--color-dark);
+    padding: 6rem var(--space-lg) var(--space-lg);
+    transition: right 0.45s cubic-bezier(0.4,0,0.2,1);
+    box-shadow: -10px 0 30px rgba(0,0,0,0.3);
+  }
+  .nav.open { right: 0; }
+  .nav__list { flex-direction: column; align-items: flex-start; gap: 1.6rem; }
+  .nav__link { font-size: var(--fs-md); }
+
+  .nav-overlay { position: fixed; inset: 0; background: rgba(0,0,0,0.6); z-index: 999; opacity: 0; visibility: hidden; transition: var(--transition-base); }
+  .nav-overlay.show { opacity: 1; visibility: visible; }
+
+  .about__grid, .contact__grid { grid-template-columns: 1fr; }
+  .about__media { margin-bottom: 4rem; max-width: 480px; margin-inline: auto; }
+  .about__text { text-align: center; }
+  .about__points { justify-items: center; }
+  .about__points li { justify-content: center; }
+  .about__cta { justify-content: center; }
+
+  .footer__grid { grid-template-columns: 1fr 1fr; gap: var(--space-lg) var(--space-md); }
+}
+
+/* ============ الأجهزة اللوحية الصغيرة والموبايل الكبير (max-width: 767px) ============ */
+@media (max-width: 767px) {
+  :root {
+    --fs-hero: 2.1rem; --fs-xxl: 1.8rem; --fs-xl: 1.6rem; --fs-lg: 1.25rem;
+    --space-xl: 2.5rem; --space-xxl: 3rem;
+  }
+
+  .container { padding-inline: var(--space-sm); }
+
+  .header { height: 72px; }
+  .header.scrolled { height: 64px; }
+  .logo span { font-size: 1.1rem; }
+  .logo i { font-size: 1.3rem; }
+
+  .hero { min-height: 100vh; min-height: 100svh; text-align: center; }
+  .hero__content { padding-top: 5rem; display: flex; flex-direction: column; align-items: center; }
+  .hero__title { max-width: 100%; }
+  .hero__desc { margin-inline: auto; }
+  .hero__actions { justify-content: center; }
+  .hero__stats { grid-template-columns: repeat(2, 1fr); text-align: center; }
+
+  .about { padding: var(--space-xxl) 0; }
+  .about__img--sub { width: 60%; left: -5%; bottom: -8%; }
+  .about__badge { padding: 0.7rem 1rem; right: 0; }
+  .about__cta { flex-direction: column; gap: var(--space-md); }
+
+  .properties__grid { grid-template-columns: 1fr; }
+  .services__grid { grid-template-columns: 1fr; }
+
+  .filter-tabs { justify-content: flex-start; overflow-x: auto; flex-wrap: nowrap; padding-bottom: 0.5rem; -webkit-overflow-scrolling: touch; }
+  .filter-tabs::-webkit-scrollbar { height: 4px; }
+  .filter-btn { flex-shrink: 0; }
+
+  .testimonial-card { padding: var(--space-lg) var(--space-md); }
+
+  .contact__form { padding: var(--space-lg); }
+  .form-row { grid-template-columns: 1fr; }
+
+  .footer__grid { grid-template-columns: 1fr; text-align: center; }
+  .footer__about .contact__social { justify-content: center; }
+  .newsletter-form { max-width: 360px; margin-inline: auto; }
+  .footer__bottom { flex-direction: column; text-align: center; }
+
+  #backToTop { bottom: 1.2rem; left: 1.2rem; width: 42px; height: 42px; }
+}
+
+/* ============ شاشات الموبايل المتوسطة (max-width: 575px) ============ */
+@media (max-width: 575px) {
+  :root { --fs-hero: 1.75rem; --fs-xxl: 1.55rem; --fs-md: 1rem; }
+
+  .tagline { font-size: 0.75rem; padding: 0.4rem 0.9rem; }
+  .hero__desc { font-size: 0.9rem; }
+  .hero__actions { flex-direction: column; width: 100%; gap: 0.9rem; }
+  .hero__actions .btn { width: 100%; }
+  .hero__stats { gap: var(--space-sm); }
+  .stat h3 { font-size: 1.4rem; }
+  .stat p { font-size: 0.75rem; }
+
+  .section-tag { font-size: 0.75rem; padding: 0.4rem 0.9rem; }
+  .section-desc { font-size: 0.9rem; }
+
+  .about__media { max-width: 320px; }
+  .about__badge i { font-size: 1.3rem; }
+  .about__badge strong { font-size: 0.8rem; }
+
+  .property-card__img { height: 190px; }
+  .service-card { padding: var(--space-md); }
+  .service-card__icon { width: 64px; height: 64px; font-size: 1.5rem; }
+
+  .testimonial-card p { font-size: 0.9rem; }
+  .testimonial-card__user img { width: 46px; height: 46px; }
+
+  .contact__icon { width: 42px; height: 42px; font-size: 1rem; }
+}
+
+/* ============ أصغر الشاشات (max-width: 400px) ============ */
+@media (max-width: 400px) {
+  :root { --fs-hero: 1.55rem; --space-md: 1.1rem; }
+
+  .logo span { font-size: 0.95rem; }
+  .nav { width: 100%; }
+
+  .hero__title { line-height: 1.35; }
+  .hero__stats { grid-template-columns: repeat(2, 1fr); gap: 0.8rem; }
+
+  .about__img--sub { display: none; }
+  .about__badge { position: static; margin-top: var(--space-md); display: inline-flex; }
+
+  .properties__grid { gap: var(--space-md); }
+  .property-card__meta { gap: 0.6rem; }
+  .property-card__meta li { font-size: 0.7rem; }
+
+  .contact__form { padding: var(--space-md); }
+  .contact__form h3 { font-size: 1.1rem; }
+
+  .testimonial-controls { gap: var(--space-sm); }
+  .testimonial-controls button { width: 40px; height: 40px; }
+}
+
+/* ============ دعم الوضع الأفقي على الموبايل ============ */
+@media (max-width: 900px) and (orientation: landscape) and (max-height: 500px) {
+  .hero { min-height: auto; padding: 6rem 0 3rem; }
+  .hero__content { padding-top: 1rem; }
+  .hero__stats { grid-template-columns: repeat(4, 1fr); }
+}
+
+/* ============ إصلاحات النشر والمتصفحات ============ */
+@media (max-width: 767px) {
+  .container { width: 100%; }
+  .hero__title,
+  .section-title,
+  .hero__desc,
+  .section-desc,
+  .property-card__body,
+  .service-card,
+  .contact__info,
+  .contact__form {
+    overflow-wrap: anywhere;
+  }
+
+  .property-card__body > p {
+    align-items: flex-start;
+  }
+
+  .testimonial-card {
+    overflow-wrap: anywhere;
+  }
+}
+
+@supports not (height: 100svh) {
+  .hero { min-height: 100vh; }
+}
