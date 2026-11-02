@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <!-- إعدادات أساسية للغة والعرض -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Youssef Sameh">
+  <meta name="theme-color" content="#111827">
+  <meta name="application-name" content="نخبة العقارية">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+
+  <!-- عنوان الصفحة ووصفها لمحركات البحث -->
+  <title>نخبة العقارية | عقارات فاخرة للبيع والإيجار في مصر</title>
+  <meta name="description" content="اكتشف مجموعة مختارة من الفلل والشقق والعقارات التجارية في مصر مع نخبة العقارية. تعرّف على خدمات البيع والشراء والتأجير والاستشارات العقارية.">
+  <meta name="robots" content="index, follow, max-image-preview:large">
+  <meta name="googlebot" content="index, follow">
+
+  <!-- بيانات المشاركة عند إرسال رابط الموقع -->
+  <meta property="og:locale" content="ar_EG">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="نخبة العقارية">
+  <meta property="og:title" content="نخبة العقارية | عقارات للبيع والإيجار في مصر">
+  <meta property="og:description" content="تصفح الفلل والشقق والعقارات التجارية، واكتشف خدمات نخبة العقارية في البيع والشراء والتأجير والاستشارات العقارية.">
+  <meta property="og:image" content="https://luxury-real-estate-website-eight.vercel.app/og-image.jpeg">
+  <meta property="og:image:alt" content="فيلا فاخرة معروضة ضمن موقع نخبة العقارية">
+  <meta property="og:image:type" content="image/jpeg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="نخبة العقارية | عقارات للبيع والإيجار في مصر">
+  <meta name="twitter:description" content="تصفح الفلل والشقق والعقارات التجارية، واكتشف خدمات نخبة العقارية.">
+  <meta name="twitter:image" content="https://luxury-real-estate-website-eight.vercel.app/og-image.jpeg">
+
+  <!-- أيقونات الموقع والمتصفح والأجهزة -->
+  <link rel="icon" href="./favicon.ico" sizes="any">
+  <link rel="icon" type="image/svg+xml" href="./favicon.svg">
+  <link rel="icon" type="image/png" sizes="96x96" href="./favicon-96x96.png">
+  <link rel="apple-touch-icon" href="./apple-touch-icon.png">
+  <link rel="manifest" href="./site.webmanifest">
+
+  <!-- تحميل الخطوط والأيقونات الخارجية -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800;900&family=Tajawal:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- ملفات التنسيق: المتغيرات أولًا ثم التنسيق العام والتجاوب -->
+  <link rel="stylesheet" href="./css/variables.css">
+  <link rel="stylesheet" href="./css/main.css">
+  <link rel="stylesheet" href="./css/responsive.css">
+</head>
+<body>
+<!-- المحتوى الرئيسي للموقع: جميع الأقسام باللغة العربية وباتجاه RTL. -->
+
+<!-- ======================= Preloader ======================= -->
+<div id="preloader">
+  <div class="preloader-inner">
+    <i class="fa-solid fa-building-columns"></i>
+    <span>نخبة العقارية</span>
+  </div>
+</div>
+
+<!-- ======================= زر العودة لأعلى ======================= -->
+<button id="backToTop" aria-label="العودة للأعلى"><i class="fa-solid fa-arrow-up"></i></button>
+<div class="nav-overlay" id="navOverlay"></div>
+
+<!-- ======================= الهيدر ======================= -->
+<header id="header" class="header">
+  <div class="container header__inner">
+    <a href="#home" class="logo">
+      <i class="fa-solid fa-building-columns"></i>
+      <span>نخبة <em>العقارية</em></span>
+    </a>
+
+    <nav class="nav" id="nav" aria-label="القائمة الرئيسية">
+      <ul class="nav__list">
+        <li><a href="#home" class="nav__link active">الرئيسية</a></li>
+        <li><a href="#about" class="nav__link">من نحن</a></li>
+        <li><a href="#properties" class="nav__link">العقارات</a></li>
+        <li><a href="#services" class="nav__link">خدماتنا</a></li>
+        <li><a href="#testimonials" class="nav__link">آراء العملاء</a></li>
+        <li><a href="#contact" class="nav__link">تواصل معنا</a></li>
+      </ul>
+    </nav>
+
+    <a href="#contact" class="btn btn--primary header__cta">احجز استشارة <i class="fa-solid fa-arrow-left-long"></i></a>
+
+    <button class="burger" id="burger" aria-label="فتح القائمة">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main id="main-content">
+<!-- ======================= 1. قسم الهيرو ======================= -->
+<section class="hero" id="home">
+  <div class="hero__bg">
+    <img src="https://images.pexels.com/photos/16573669/pexels-photo-16573669.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=900&w=1800" alt="فيلا فاخرة" fetchpriority="high" loading="eager" decoding="async">
+  </div>
+  <div class="hero__overlay"></div>
+  <div class="container hero__content" data-aos>
+    <span class="tagline"><i class="fa-solid fa-gem"></i> وجهتك الأولى للعقارات الفاخرة</span>
+    <h1 class="hero__title">نحوّل حلمك العقاري <br> إلى <span>واقع فاخر</span></h1>
+    <p class="hero__desc">نقدم لكم نخبة من أفخم الفيلل والشقق والمشاريع الاستثمارية بأعلى معايير الجودة والتصميم، مع فريق متخصص يرافقكم في كل خطوة.</p>
+
+    <div class="hero__actions">
+      <a href="#properties" class="btn btn--primary">تصفح العقارات <i class="fa-solid fa-arrow-left-long"></i></a>
+      <a href="#contact" class="btn btn--outline"><i class="fa-solid fa-phone"></i> تواصل معنا</a>
+    </div>
+
+    <div class="hero__stats">
+      <div class="stat">
+        <h3><span class="counter" data-target="15">0</span>+</h3>
+        <p>سنة خبرة</p>
+      </div>
+      <div class="stat">
+        <h3><span class="counter" data-target="520">0</span>+</h3>
+        <p>عقار تم بيعه</p>
+      </div>
+      <div class="stat">
+        <h3><span class="counter" data-target="98">0</span>%</h3>
+        <p>رضا العملاء</p>
+      </div>
+      <div class="stat">
+        <h3><span class="counter" data-target="40">0</span>+</h3>
+        <p>مشروع ناجح</p>
+      </div>
+    </div>
+  </div>
+
+  <a href="#about" class="scroll-down" aria-label="انتقل للأسفل"><i class="fa-solid fa-chevron-down"></i></a>
+</section>
+
+<!-- ======================= 2. قسم من نحن ======================= -->
+<section class="about" id="about">
+  <div class="container about__grid">
+    <div class="about__media" data-aos="right">
+      <img src="https://images.pexels.com/photos/8089172/pexels-photo-8089172.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=700&w=600" alt="تصميم داخلي فاخر" class="about__img about__img--main" loading="lazy" decoding="async">
+      <img src="https://images.pexels.com/photos/7031600/pexels-photo-7031600.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=400&w=500" alt="فيلا عصرية" class="about__img about__img--sub" loading="lazy" decoding="async">
+      <div class="about__badge">
+        <i class="fa-solid fa-award"></i>
+        <div>
+          <strong>الأفضل لعام</strong>
+          <span>2025</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="about__text" data-aos="left">
+      <span class="section-tag"><i class="fa-solid fa-building"></i> من نحن</span>
+      <h2 class="section-title">شريكك الموثوق في عالم <span>العقارات الفاخرة</span></h2>
+      <p class="section-desc">
+        منذ أكثر من 15 عامًا، تقدم "نخبة العقارية" خدمات استثنائية في بيع وشراء وتأجير وإدارة العقارات الفاخرة.
+        نؤمن بأن كل عميل يستحق تجربة فريدة ترتقي بتوقعاته، لذلك نحرص على اختيار أرقى المواقع وأفخم التصاميم.
+      </p>
+
+      <ul class="about__points">
+        <li><i class="fa-solid fa-circle-check"></i> فريق استشاري متخصص على مدار الساعة</li>
+        <li><i class="fa-solid fa-circle-check"></i> شراكات حصرية مع كبرى المطورين العقاريين</li>
+        <li><i class="fa-solid fa-circle-check"></i> ضمان قانوني كامل لجميع الصفقات والعقود</li>
+        <li><i class="fa-solid fa-circle-check"></i> خدمات ما بعد البيع وإدارة أملاك احترافية</li>
+      </ul>
+
+      <div class="about__cta">
+        <a href="#contact" class="btn btn--primary">تعرف علينا أكثر <i class="fa-solid fa-arrow-left-long"></i></a>
+        <div class="about__call">
+          <i class="fa-solid fa-headset"></i>
+          <div>
+            <span>اتصل بنا مباشرة</span>
+            <strong dir="ltr">+20 100 123 4567</strong>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ======================= 3. قسم العقارات المميزة ======================= -->
+<section class="properties" id="properties">
+  <div class="container">
+    <div class="section-header" data-aos>
+      <span class="section-tag"><i class="fa-solid fa-key"></i> عقاراتنا</span>
+      <h2 class="section-title">أبرز <span>العقارات</span> المتاحة لدينا</h2>
+      <p class="section-desc">تشكيلة مختارة بعناية من أفخم الفيلل والشقق والمشاريع التجارية في أرقى المواقع</p>
+    </div>
+
+    <div class="filter-tabs" data-aos>
+      <button class="filter-btn active" data-filter="all">الكل</button>
+      <button class="filter-btn" data-filter="villa">فيلل</button>
+      <button class="filter-btn" data-filter="apartment">شقق</button>
+      <button class="filter-btn" data-filter="commercial">تجاري</button>
+    </div>
+
+    <div class="properties__grid">
+      <article class="property-card" data-category="villa" data-aos>
+        <div class="property-card__img">
+          <img src="https://images.pexels.com/photos/29560257/pexels-photo-29560257.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=500&w=700" alt="فيلا استوائية فاخرة" loading="lazy" decoding="async">
+          <span class="tag tag--sale">للبيع</span>
+          <button class="fav-btn" aria-label="إضافة للمفضلة"><i class="fa-regular fa-heart"></i></button>
+        </div>
+        <div class="property-card__body">
+          <div class="property-card__price">4,200,000 ج.م</div>
+          <h3>فيلا النخيل الملكية</h3>
+          <p><i class="fa-solid fa-location-dot"></i> القاهرة الجديدة - التجمع الخامس</p>
+          <ul class="property-card__meta">
+            <li><i class="fa-solid fa-bed"></i> 5 غرف</li>
+            <li><i class="fa-solid fa-bath"></i> 4 حمامات</li>
+            <li><i class="fa-solid fa-ruler-combined"></i> 650 م²</li>
+          </ul>
+          <a href="#contact" class="property-card__link">عرض التفاصيل <i class="fa-solid fa-arrow-left-long"></i></a>
+        </div>
+      </article>
+
+      <article class="property-card" data-category="apartment" data-aos>
+        <div class="property-card__img">
+          <img src="https://images.pexels.com/photos/7174113/pexels-photo-7174113.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=500&w=700" alt="شقة فاخرة عصرية" loading="lazy" decoding="async">
+          <span class="tag tag--rent">للإيجار</span>
+          <button class="fav-btn" aria-label="إضافة للمفضلة"><i class="fa-regular fa-heart"></i></button>
+        </div>
+        <div class="property-card__body">
+          <div class="property-card__price">35,000 ج.م / شهريًا</div>
+          <h3>شقة النخبة البانورامية</h3>
+          <p><i class="fa-solid fa-location-dot"></i> الساحل الشمالي - مارينا</p>
+          <ul class="property-card__meta">
+            <li><i class="fa-solid fa-bed"></i> 3 غرف</li>
+            <li><i class="fa-solid fa-bath"></i> 2 حمام</li>
+            <li><i class="fa-solid fa-ruler-combined"></i> 180 م²</li>
+          </ul>
+          <a href="#contact" class="property-card__link">عرض التفاصيل <i class="fa-solid fa-arrow-left-long"></i></a>
+        </div>
+      </article>
+
+      <article class="property-card" data-category="commercial" data-aos>
+        <div class="property-card__img">
+          <img src="https://images.pexels.com/photos/27015421/pexels-photo-27015421.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=500&w=700" alt="برج تجاري فاخر" loading="lazy" decoding="async">
+          <span class="tag tag--sale">للبيع</span>
+          <button class="fav-btn" aria-label="إضافة للمفضلة"><i class="fa-regular fa-heart"></i></button>
+        </div>
+        <div class="property-card__body">
+          <div class="property-card__price">9,800,000 ج.م</div>
+          <h3>برج النخبة التجاري</h3>
+          <p><i class="fa-solid fa-location-dot"></i> العاصمة الإدارية - المول التجاري</p>
+          <ul class="property-card__meta">
+            <li><i class="fa-solid fa-building"></i> 8 طوابق</li>
+            <li><i class="fa-solid fa-car"></i> جراج خاص</li>
+            <li><i class="fa-solid fa-ruler-combined"></i> 1200 م²</li>
+          </ul>
+          <a href="#contact" class="property-card__link">عرض التفاصيل <i class="fa-solid fa-arrow-left-long"></i></a>
+        </div>
+      </article>
+
+      <article class="property-card" data-category="villa" data-aos>
+        <div class="property-card__img">
+          <img src="https://images.pexels.com/photos/7031600/pexels-photo-7031600.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=500&w=700" alt="فيلا عصرية هادئة" loading="lazy" decoding="async">
+          <span class="tag tag--sale">للبيع</span>
+          <button class="fav-btn" aria-label="إضافة للمفضلة"><i class="fa-regular fa-heart"></i></button>
+        </div>
+        <div class="property-card__body">
+          <div class="property-card__price">6,500,000 ج.م</div>
+          <h3>فيلا الواحة الخضراء</h3>
+          <p><i class="fa-solid fa-location-dot"></i> الشيخ زايد - كمبوند راقي</p>
+          <ul class="property-card__meta">
+            <li><i class="fa-solid fa-bed"></i> 6 غرف</li>
+            <li><i class="fa-solid fa-bath"></i> 5 حمامات</li>
+            <li><i class="fa-solid fa-ruler-combined"></i> 800 م²</li>
+          </ul>
+          <a href="#contact" class="property-card__link">عرض التفاصيل <i class="fa-solid fa-arrow-left-long"></i></a>
+        </div>
+      </article>
+
+      <article class="property-card" data-category="apartment" data-aos>
+        <div class="property-card__img">
+          <img src="https://images.pexels.com/photos/35410014/pexels-photo-35410014.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=500&w=700" alt="شقة بإطلالة بحرية" loading="lazy" decoding="async">
+          <span class="tag tag--sale">للبيع</span>
+          <button class="fav-btn" aria-label="إضافة للمفضلة"><i class="fa-regular fa-heart"></i></button>
+        </div>
+        <div class="property-card__body">
+          <div class="property-card__price">2,950,000 ج.م</div>
+          <h3>شقة مارينا الذهبية</h3>
+          <p><i class="fa-solid fa-location-dot"></i> العين السخنة</p>
+          <ul class="property-card__meta">
+            <li><i class="fa-solid fa-bed"></i> 2 غرفة</li>
+            <li><i class="fa-solid fa-bath"></i> 2 حمام</li>
+            <li><i class="fa-solid fa-ruler-combined"></i> 120 م²</li>
+          </ul>
+          <a href="#contact" class="property-card__link">عرض التفاصيل <i class="fa-solid fa-arrow-left-long"></i></a>
+        </div>
+      </article>
+
+      <article class="property-card" data-category="commercial" data-aos>
+        <div class="property-card__img">
+          <img src="https://images.pexels.com/photos/14294074/pexels-photo-14294074.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=500&w=700" alt="مكاتب إدارية فاخرة" loading="lazy" decoding="async">
+          <span class="tag tag--rent">للإيجار</span>
+          <button class="fav-btn" aria-label="إضافة للمفضلة"><i class="fa-regular fa-heart"></i></button>
+        </div>
+        <div class="property-card__body">
+          <div class="property-card__price">60,000 ج.م / شهريًا</div>
+          <h3>مكاتب النخبة الإدارية</h3>
+          <p><i class="fa-solid fa-location-dot"></i> القاهرة الجديدة - التجمع الأول</p>
+          <ul class="property-card__meta">
+            <li><i class="fa-solid fa-door-open"></i> 4 مكاتب</li>
+            <li><i class="fa-solid fa-wifi"></i> إنترنت فائق</li>
+            <li><i class="fa-solid fa-ruler-combined"></i> 300 م²</li>
+          </ul>
+          <a href="#contact" class="property-card__link">عرض التفاصيل <i class="fa-solid fa-arrow-left-long"></i></a>
+        </div>
+      </article>
+    </div>
+
+    <div class="properties__more" data-aos>
+      <a href="#contact" class="btn btn--outline">عرض جميع العقارات <i class="fa-solid fa-arrow-left-long"></i></a>
+    </div>
+  </div>
+</section>
+
+<!-- ======================= 4. قسم خدماتنا ======================= -->
+<section class="services" id="services">
+  <div class="container">
+    <div class="section-header" data-aos>
+      <span class="section-tag"><i class="fa-solid fa-briefcase"></i> خدماتنا</span>
+      <h2 class="section-title">نقدم لكم حلولاً عقارية <span>متكاملة</span></h2>
+      <p class="section-desc">مجموعة متنوعة من الخدمات المصممة لتلبية جميع احتياجاتكم العقارية بأعلى احترافية</p>
+    </div>
+
+    <div class="services__grid">
+      <div class="service-card" data-aos>
+        <div class="service-card__icon"><i class="fa-solid fa-house-circle-check"></i></div>
+        <h3>بيع وشراء العقارات</h3>
+        <p>نرافقكم خطوة بخطوة في عملية البيع أو الشراء لضمان صفقة آمنة وعادلة لجميع الأطراف.</p>
+      </div>
+      <div class="service-card" data-aos>
+        <div class="service-card__icon"><i class="fa-solid fa-key"></i></div>
+        <h3>تأجير العقارات</h3>
+        <p>نوفر خيارات إيجار متنوعة تناسب جميع الميزانيات في أرقى الأحياء والمناطق السكنية.</p>
+      </div>
+      <div class="service-card" data-aos>
+        <div class="service-card__icon"><i class="fa-solid fa-chart-line"></i></div>
+        <h3>الاستشارات الاستثمارية</h3>
+        <p>فريق من الخبراء يقدم لك أفضل الفرص الاستثمارية العقارية لتحقيق أعلى عائد ممكن.</p>
+      </div>
+      <div class="service-card" data-aos>
+        <div class="service-card__icon"><i class="fa-solid fa-trowel-bricks"></i></div>
+        <h3>إدارة وتطوير المشاريع</h3>
+        <p>نشرف على تطوير وإدارة المشاريع العقارية من التخطيط وحتى التسليم النهائي.</p>
+      </div>
+      <div class="service-card" data-aos>
+        <div class="service-card__icon"><i class="fa-solid fa-file-contract"></i></div>
+        <h3>الخدمات القانونية</h3>
+        <p>نضمن لكم إتمام جميع العقود والإجراءات القانونية بكل شفافية وأمان تام.</p>
+      </div>
+      <div class="service-card" data-aos>
+        <div class="service-card__icon"><i class="fa-solid fa-couch"></i></div>
+        <h3>التصميم الداخلي</h3>
+        <p>نساعدكم في تنسيق وتصميم عقاركم بلمسات فاخرة تعكس ذوقكم الرفيع.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ======================= 5. قسم آراء العملاء ======================= -->
+<section class="testimonials" id="testimonials">
+  <div class="container">
+    <div class="section-header section-header--light" data-aos>
+      <span class="section-tag"><i class="fa-solid fa-comment-dots"></i> آراء العملاء</span>
+      <h2 class="section-title">ماذا يقول <span>عملاؤنا</span> عنا</h2>
+      <p class="section-desc">ثقة عملائنا هي أساس نجاحنا المستمر على مدار السنوات</p>
+    </div>
+
+    <div class="testimonial-slider" data-aos>
+      <div class="testimonial-track" id="testimonialTrack">
+        <div class="testimonial-card">
+          <div class="testimonial-card__stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+          <p>"تعاملت مع نخبة العقارية لشراء فيلا أحلامي، وكانت التجربة أكثر من رائعة من حيث الاحترافية والمتابعة المستمرة حتى تسليم المفاتيح."</p>
+          <div class="testimonial-card__user">
+            <img src="https://images.pexels.com/photos/8469936/pexels-photo-8469936.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=120&w=120" alt="عميلة" loading="lazy" decoding="async">
+            <div>
+              <strong>سارة أحمد</strong>
+              <span>مالكة فيلا - الشيخ زايد</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card">
+          <div class="testimonial-card__stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+          <p>"فريق عمل محترف ومتعاون جدًا، ساعدوني في العثور على استثمار عقاري ممتاز بعائد ممتاز. أنصح بالتعامل معهم بثقة تامة."</p>
+          <div class="testimonial-card__user">
+            <img src="https://images.pexels.com/photos/7641998/pexels-photo-7641998.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=120&w=120" alt="عميل" loading="lazy" decoding="async">
+            <div>
+              <strong>محمد الشربيني</strong>
+              <span>مستثمر عقاري</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card">
+          <div class="testimonial-card__stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+          <p>"خدمة ما بعد البيع ممتازة والفريق متواجد دائمًا للرد على استفساراتي. تجربة فاخرة تليق باسم الشركة فعلًا."</p>
+          <div class="testimonial-card__user">
+            <img src="https://images.pexels.com/photos/7578863/pexels-photo-7578863.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=120&w=120" alt="عميل" loading="lazy" decoding="async">
+            <div>
+              <strong>خالد منصور</strong>
+              <span>مالك شقة - الساحل الشمالي</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="testimonial-controls">
+        <button id="prevTestimonial" aria-label="السابق"><i class="fa-solid fa-chevron-right"></i></button>
+        <div class="testimonial-dots" id="testimonialDots"></div>
+        <button id="nextTestimonial" aria-label="التالي"><i class="fa-solid fa-chevron-left"></i></button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ======================= 6. قسم تواصل معنا ======================= -->
+<section class="contact" id="contact">
+  <div class="container contact__grid">
+    <div class="contact__info" data-aos="right">
+      <span class="section-tag"><i class="fa-solid fa-paper-plane"></i> تواصل معنا</span>
+      <h2 class="section-title">هل لديك <span>استفسار؟</span> تحدث معنا</h2>
+      <p class="section-desc">فريقنا جاهز لمساعدتك في إيجاد العقار المثالي أو الإجابة عن جميع استفساراتك.</p>
+
+      <ul class="contact__list">
+        <li>
+          <span class="contact__icon"><i class="fa-solid fa-location-dot"></i></span>
+          <div><strong>العنوان</strong><p>شارع التسعين الشمالي، القاهرة الجديدة، مصر</p></div>
+        </li>
+        <li>
+          <span class="contact__icon"><i class="fa-solid fa-phone"></i></span>
+          <div><strong>الهاتف</strong><p dir="ltr">+20 100 123 4567</p></div>
+        </li>
+        <li>
+          <span class="contact__icon"><i class="fa-solid fa-envelope"></i></span>
+          <div><strong>البريد الإلكتروني</strong><p dir="ltr">info@nokhba-realestate.com</p></div>
+        </li>
+      </ul>
+
+      <div class="contact__social">
+        <a href="#" aria-label="فيسبوك"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="#" aria-label="إنستجرام"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#" aria-label="تويتر"><i class="fa-brands fa-twitter"></i></a>
+        <a href="#" aria-label="واتساب"><i class="fa-brands fa-whatsapp"></i></a>
+      </div>
+    </div>
+
+    <form class="contact__form" id="contactForm" data-aos="left" novalidate>
+      <h3>احجز استشارتك المجانية</h3>
+
+      <div class="form-group">
+        <label for="name">الاسم بالكامل</label>
+        <input type="text" id="name" name="name" placeholder="اكتب اسمك هنا">
+        <span class="error-msg" id="nameError"></span>
+      </div>
+
+      <div class="form-row">
+        <div class="form-group">
+          <label for="phone">رقم الهاتف</label>
+          <input type="tel" id="phone" name="phone" placeholder="01xxxxxxxxx" dir="ltr">
+          <span class="error-msg" id="phoneError"></span>
+        </div>
+        <div class="form-group">
+          <label for="email">البريد الإلكتروني</label>
+          <input type="email" id="email" name="email" placeholder="example@mail.com" dir="ltr">
+          <span class="error-msg" id="emailError"></span>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="service">نوع الخدمة</label>
+        <select id="service" name="service">
+          <option value="">اختر الخدمة المطلوبة</option>
+          <option value="buy">شراء عقار</option>
+          <option value="rent">تأجير عقار</option>
+          <option value="invest">استثمار عقاري</option>
+          <option value="other">أخرى</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="message">رسالتك</label>
+        <textarea id="message" name="message" rows="4" placeholder="اكتب تفاصيل طلبك هنا..."></textarea>
+        <span class="error-msg" id="messageError"></span>
+      </div>
+
+      <button type="submit" class="btn btn--primary btn--full">
+        <span>إرسال الطلب</span> <i class="fa-solid fa-paper-plane"></i>
+      </button>
+
+      <div class="form-success" id="formSuccess">
+        <i class="fa-solid fa-circle-check"></i> تم إرسال طلبك بنجاح! سنتواصل معك قريبًا.
+      </div>
+    </form>
+  </div>
+</section>
+
+</main>
+
+<!-- ======================= الفوتر ======================= -->
+<footer class="footer">
+  <div class="container footer__grid">
+    <div class="footer__about">
+      <a href="#home" class="logo">
+        <i class="fa-solid fa-building-columns"></i>
+        <span>نخبة <em>العقارية</em></span>
+      </a>
+      <p>شريكك الموثوق لامتلاك عقار فاخر يليق بطموحك. نقدم خدمات عقارية متكاملة بخبرة تمتد لأكثر من 15 عامًا.</p>
+      <div class="contact__social">
+        <a href="#" aria-label="فيسبوك"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="#" aria-label="إنستجرام"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#" aria-label="تويتر"><i class="fa-brands fa-twitter"></i></a>
+        <a href="#" aria-label="واتساب"><i class="fa-brands fa-whatsapp"></i></a>
+      </div>
+    </div>
+
+    <div class="footer__links">
+      <h4>روابط سريعة</h4>
+      <ul>
+        <li><a href="#home">الرئيسية</a></li>
+        <li><a href="#about">من نحن</a></li>
+        <li><a href="#properties">العقارات</a></li>
+        <li><a href="#services">خدماتنا</a></li>
+        <li><a href="#contact">تواصل معنا</a></li>
+      </ul>
+    </div>
+
+    <div class="footer__links">
+      <h4>خدماتنا</h4>
+      <ul>
+        <li><a href="#services">بيع وشراء العقارات</a></li>
+        <li><a href="#services">تأجير العقارات</a></li>
+        <li><a href="#services">استشارات استثمارية</a></li>
+        <li><a href="#services">إدارة المشاريع</a></li>
+      </ul>
+    </div>
+
+    <div class="footer__newsletter">
+      <h4>النشرة البريدية</h4>
+      <p>اشترك لتصلك أحدث العروض والعقارات الجديدة أولًا بأول.</p>
+      <form class="newsletter-form" id="newsletterForm">
+        <input type="email" placeholder="بريدك الإلكتروني" required dir="ltr">
+        <button type="submit" aria-label="اشتراك"><i class="fa-solid fa-paper-plane"></i></button>
+      </form>
+    </div>
+  </div>
+
+  <div class="footer__bottom">
+    <p>© 2025 نخبة العقارية. جميع الحقوق محفوظة.</p>
+    <p>تصميم وتطوير بشغف <i class="fa-solid fa-heart"></i></p>
+  </div>
+</footer>
+
+<!-- ======================= ملفات JavaScript =======================
+     main.js للوظائف العامة، slider.js للسلايدر، validation.js للنماذج.
+     تم وضعها في نهاية الصفحة حتى يظهر المحتوى قبل تنفيذها.
+================================================================== -->
+<script src="./js/main.js"></script>
+<script src="./js/slider.js"></script>
+<script src="./js/validation.js"></script>
+</body>
+</html>
