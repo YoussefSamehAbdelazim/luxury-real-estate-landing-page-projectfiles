@@ -115,7 +115,7 @@ Interested in building modern web interfaces that combine creative design, usabi
 
 ## 📌 Project Status
 
-**Status:** Ongoing Development
+**Status:** completed 
 
 This landing page can be enhanced with additional sections, interactions, and integrations in future updates.
 
